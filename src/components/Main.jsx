@@ -23,11 +23,7 @@ const Main = () => {
                   <ListGroup variant="flush">
                     <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Posición:</span> {jugador.posicion.charAt(0).toUpperCase() + jugador.posicion.slice(1)}</ListGroup.Item>
                     <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Edad:</span> {jugador.edad} años</ListGroup.Item>
-                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Estatura:</span> {jugador.estatura}</ListGroup.Item>
-                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Peso:</span> {jugador.peso}</ListGroup.Item>
                     <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Club:</span> {jugador.club}</ListGroup.Item>
-                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Goles:</span> {jugador.goles}</ListGroup.Item>
-                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Asistencias:</span> {jugador.asistencias}</ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
               </Card>
