@@ -1,1 +1,31 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+.mainPage {
+  flex-grow: 1;
+}
+
+.arquero{
+  background-color: #adf286;
+}
+
+.defensor{
+  background-color: #86adf2;
+}
+
+.mediocampista{
+  background-color: #f2d986;
+}
+
+.delantero{
+  background-color: #f28686;
+}
