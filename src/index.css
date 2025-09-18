@@ -29,3 +29,11 @@ body{
 .delantero{
   background-color: #f28686;
 }
+
+/* Footer siempre visible */
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  margin-top: auto;
+}
