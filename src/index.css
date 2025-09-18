@@ -13,3 +13,19 @@ body{
 .mainPage {
   flex-grow: 1;
 }
+
+.arquero{
+  background-color: #adf286;
+}
+
+.defensor{
+  background-color: #86adf2;
+}
+
+.mediocampista{
+  background-color: #f2d986;
+}
+
+.delantero{
+  background-color: #f28686;
+}

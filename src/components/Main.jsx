@@ -9,25 +9,25 @@ const Main = () => {
       <Container fluid>
         <Row>
           {jugadoresArgentina.map((jugador) => (
-            <Col xs={12} sm={6} md={4} lg={3} key={jugador.numero} className="">
-              <Card className="mb-4">
+            <Col xs={12} sm={6} md={4} lg={3} key={jugador.numero}>
+              <Card className={`mb-4 ${jugador.posicion}`} border="secondary">
                 <Card.Img
-                  className="img-fluid border-bottom"
+                  className="img-fluid border-bottom bg-white"
                   variant="top"
                   src={jugador.img}
                 />
                 <Card.Body>
-                  <Card.Title className="text-center">
+                  <Card.Title className="text-center fs-2">
                     {jugador.nombre}
                   </Card.Title>
                   <ListGroup variant="flush">
-                    <ListGroup.Item><span className="fw-bold">Posición:</span> {jugador.posicion.charAt(0).toUpperCase() + jugador.posicion.slice(1)}</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Edad:</span> {jugador.edad} años</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Estatura:</span> {jugador.estatura}</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Peso:</span> {jugador.peso}</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Club:</span> {jugador.club}</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Goles:</span> {jugador.goles}</ListGroup.Item>
-                    <ListGroup.Item><span className="fw-bold">Asistencias:</span> {jugador.asistencias}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Posición:</span> {jugador.posicion.charAt(0).toUpperCase() + jugador.posicion.slice(1)}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Edad:</span> {jugador.edad} años</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Estatura:</span> {jugador.estatura}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Peso:</span> {jugador.peso}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Club:</span> {jugador.club}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Goles:</span> {jugador.goles}</ListGroup.Item>
+                    <ListGroup.Item className={`${jugador.posicion}`}><span className="fw-bold">Asistencias:</span> {jugador.asistencias}</ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
               </Card>
