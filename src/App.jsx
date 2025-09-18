@@ -1,8 +1,10 @@
+import Main from "./components/Main"
+
 function App() {
 
   return (
     <>
-      <h1>Grupo 2</h1>
+      <Main />
     </>
   )
 }
